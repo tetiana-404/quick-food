@@ -1,0 +1,4 @@
+header, #home-menu, #home-our-advantages, footer{
+    display: flex;
+    justify-content:space-between;
+}

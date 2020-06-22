@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QuickFood - ресторан швидкої їжі, послуги кейтирингу</title>
+	<link rel="shortcut icon" href="img/logo.png">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+	<header>
+		<div id="logo">
+			<a href="index.html"><img src="img/logo-2.png" alt="QuickFood - ресторан швидкої їжі, послуги кейтирингу"></a><br>
+				<span>Ресторан швидкої їжі</span>
+		</div>
+		<div class="phone">
+			<img src="img/phone_icon.svg" alt="Our phone">
+        (050)123-45-67</div>
+			<nav>
+				<ul>
+					<li>
+						Головна
+					</li>
+					<li>
+						Меню
+					</li>
+					<li>
+						Акції
+					</li>
+					<li>
+						Контакти
+					</li>
+
+				</ul>
+			</nav>
+	</header>
+	<main>
+		<hr>
+		<section id="home-slide">
+			<div id="novelty">НОВИНКА</div>
+			<h2>МЕКСИКА</h2>
+			<h3>БУРГЕР</h3>
+		</section>
+		<hr>
+		<section id="home-menu">
+			<div>
+				<h2>Основне меню</h2>
+				<h3>Бургер / Піца / Салати / Напої</h3>
+			</div>
+			<div>
+				<h2>Онлайн замовлення</h2>
+				<h3>Щодня 3 9:00 до 23:00</h3>
+			</div>
+			<div>
+				<h2>Спеціальні ціни</h2>
+				<h3>Кожного дня від 59 грн.</h3>
+			</div>
+		</section>
+		<hr>
+		<section id="home-action">
+			<h2>Безкоштовна<br>доставка</h2>
+				<div>
+					<p class="action-price">99.99</p>
+					<p>SANDWICH DAY</p>
+					<button type="submit">ЗАМОВИТИ</button>
+				</div>
+		</section>
+		<hr>
+		<section id="home-our-advantages">
+			<div>
+				<img src="img/clock.svg" alt="Швидка доставка" style="height:75px;">
+				<h3>Швидка доставка</h3>
+				<hr>
+				<p>Усе, що Ви замовите,<br>
+                буде швидко доставлено до Вашого дому</p>
+			</div>
+			<div>
+				<img src="img/pizza-icon.png" alt="Смачна їжа" style="height:75px;">
+				<h3>Смачна їжа</h3>
+				<hr>
+				<p>Ми використовуємо<br>
+                лише свіжі та натуральні продукти</p>
+			</div>
+			<div>
+				<img src="img/graduation-cap.png" alt="Досвідчені кухарі" style="height:75px;">
+				<h3>Досвідчені кухарі</h3>
+				<hr>
+				<p>Наш персонал - це<br>
+                кухарі з великим досвідом роботи</p>
+			</div>
+			<div>
+				<img src="img/menu-icon.svg" alt="Різноманітне меню" style="height:75px;">
+				<h3>Різноманітне меню</h3>
+				<hr>
+				<p>В нас Ви знайдете<br>
+                 вибір страв, напоїв та десертів</p>
+			</div>
+		</section>
+		<hr>
+		<section id="home-catering">
+			<h3>У нас можна замовити</h3>
+			<h1>КЕЙТЕРІНГ</h1>
+		</section>
+		<hr>
+		<section id="home-order-catering">
+        <h2>Замовити кейтерінг:</h2>
+			<form action="https://formspree.io/mjvaoyze" method="POST">
+				<label><input type="text" id="firstname" name="firstname" placeholder="Ваше ім'я" required></label>
+				<label><input type="tel" id="phone" name="phone" placeholder="Ваше телефн" required pattern="[0-9]{10}"></label>
+				<select name="number-of-persons">
+			    <option value="1">1</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+			  </select>
+				<label><input type="date" id="birthday" name="birthday"></label>
+				<select name="event">
+			    <option value="hb">День народження</option>
+			    <option value="wd">Весілля</option>
+			    <option value="an">Ювілей</option>
+			  </select>
+				<button type="submit">Submit</button>
+			</form>
+		</section>
+		<hr>
+		<div id="home-map">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.038374096912!2d24.02950281533926!3d49.841736479396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6daf2238f7%3A0x657ac2a6cdcf320b!2z0KDQsNGC0YPRiNCwLCDQv9C70L7RidCwINCg0LjQvdC-0LosIDEsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1592779464053!5m2!1suk!2sua"
+				 height="450" style="border:0; width:100%" allowfullscreen="" aria-hidden="false"
+				tabindex="0"></iframe>
+		</div>
+	</main>
+	<footer>
+		<div>
+			&copy; QuickFood - ресторан швидкої їжі, послуги кейтирингу, 2020
+		</div>
+		<div>
+			м.Львів, пл.Ринок, 7
+		</div>
+		<div>
+			<img src="img/facebook.svg" alt="Follow us on facebook" style="width:25px;">
+			<img src="img/instagram.svg" alt="Follow us on instagram" style="width:25px;">
+    </div>
+	</footer>
+</body>
+
+</html>
