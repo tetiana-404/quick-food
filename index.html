@@ -7,59 +7,67 @@
 	<title>QuickFood - ресторан швидкої їжі, послуги кейтирингу</title>
 	<link rel="shortcut icon" href="img/logo_43x43.png">
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 	<header>
 		<div id="logo">
-			<a href="index.html"><img src="img/logo_172x62.png" alt="QuickFood - ресторан швидкої їжі, послуги кейтирингу"></a><br>
-				<span>Ресторан швидкої їжі</span>
+			<a href="index.html"><img src="img/logo_172x62.png" alt="QuickFood - ресторан швидкої їжі, послуги кейтирингу"></a>
+				<span>ресторан швидкої їжі</span>
 		</div>
 		<div class="phone">
 			<img src="img/phone_icon.svg" alt="Our phone">
-        (050)123-45-67</div>
-			<nav>
-				<ul>
-					<li>
-						Головна
-					</li>
-					<li>
-						Меню
-					</li>
-					<li>
-						Акції
-					</li>
-					<li>
-						Контакти
-					</li>
+			<div>(050)123-45-67</div>
+		</div>
+		<!-- Top Navigation Menu -->
+		<nav class="topnav">
 
+			<!-- Navigation links (hidden by default) -->
+			<div id="myLinks">
+				<ul>
+					<li><a href="index.html">Головна</a></li>
+					<li><a href="#menu">Меню</a></li>
+					<li><a href="#sale">Акції</a></li>
+					<li><a href="#catering">Кейтерінг</a></li>
+					<li><a href="#contacts">Контакти</a></li>
 				</ul>
-			</nav>
+			</div>
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</nav>
+		
 	</header>
 	<main>
-		<hr>
-		<div id="home-slide">
-			<div id="novelty">НОВИНКА</div>
-			<div>МЕКСИКА</div>
-			<div>БУРГЕР</div>
+		
+		<div id="home-banner">
+			<div class="content banner-content">
+				<div id="novelty">НОВИНКА</div>
+				<div id="banner-title">МЕКСИКА</div>
+				<div id="banner-text">БУРГЕР</div>
+			</div>
 		</div>
-		<hr>
+		
 		<section id="home-menu">
-			<div>
-				<h2>Основне меню</h2>
-				<h3>Бургер / Піца / Салати / Напої</h3>
+			<div id="main-menu">
+                
+				<h2><a href="#">Основне меню</a></h2>
+				<p>Бургер / Піца / Салати / Напої</p>
+                
 			</div>
-			<div>
+			<div id="home-action">
 				<h2>Онлайн замовлення</h2>
-				<h3>Щодня 3 9:00 до 23:00</h3>
+				<p>Щодня 3 9:00 до 23:00</p>
 			</div>
-			<div>
+			<div id="home-price">
 				<h2>Спеціальні ціни</h2>
-				<h3>Кожного дня від 59 грн.</h3>
+				<p>Кожного дня від 59 грн.</p>
 			</div>
 		</section>
-		<hr>
-		<section id="home-action">
+		
+		<section >
 			<h2>Безкоштовна<br>доставка</h2>
 				<div>
 					<p class="action-price">99.99</p>
@@ -149,7 +157,7 @@
 				height="450" style="border:0; width:100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		</div>
 	</main>
-	<footer>
+	<footer style="display:none;">
 		<div>
 			© QuickFood - ресторан швидкої їжі, послуги кейтирингу, 2020
 		</div>
@@ -161,6 +169,17 @@
 			<img src="img/instagram.svg" alt="Follow us on instagram" style="width:25px;">
     </div>
 	</footer>
+	<script>
+		function myFunction() {
+  var x = document.getElementById("myLinks");
+  console.log(x.style.display);
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+	</script>
 </body>
 
 </html>

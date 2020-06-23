@@ -1,4 +1,233 @@
-header, #home-menu, #home-our-advantages, footer{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap');
+
+:root {
+    --main-color:#444444;
+    --accent-color: #ff5d55;
+    --yellow-color:#fec63d;
+    font-family: 'Open Sans Condensed', sans-serif;
+     scroll-behavior: smooth; /*плавна прокрутка*/
+}
+
+body, p{
+    
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+a{text-decoration: none;}
+
+header, .content, #home-menu{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+header,  #home-our-advantages, footer{
     display: flex;
     justify-content:space-between;
+    align-items: center;
+}
+#logo a{
+    display: block;
+}
+#logo span{
+    display: block;
+    color:var(--accent-color);
+    font-weight: 700;
+    font-size: 14px;
+    margin-left:10px;
+    margin-top: -15px;}
+.phone{
+    display: none;
+    justify-content:space-between;
+}
+.phone div{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+@media (min-width: 850px) {
+    .phone{
+        display: flex;
+    }
+}
+/* Style the navigation menu */
+.topnav {
+  position: relative;
+  display: block;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 29px;
+  background-color: var(--accent-color);
+  padding: 20px;
+
+}
+
+.topnav #myLinks ul {
+  list-style-type: none;
+  padding: 0;
+  margin:0;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color:var(--main-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  display: block;
+  text-transform: uppercase;
+}
+
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  color: black;
+  display: block;
+  padding: 0px 16px;
+  right: 0;
+  top: 0;
+}
+.topnav a.icon .fa {
+    font-size: 34px;
+}
+/* Add a grey background color on mouse-over */
+.topnav #myLinks a:hover {
+   background-color:var(--accent-color);
+}
+@media (min-width: 650px) {
+    .topnav #myLinks {
+        display: block;
+        background-color: transparent;
+        padding: 0;
+        list-style-type: none;
+        position: relative;;
+        top: 0;
+        right: 0;}
+     .topnav #myLinks ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        list-style-type: none;
+       }
+       .topnav #myLinks ul li a{
+        padding: 5px 20px;
+       }
+    .topnav a.icon {
+        display: none;}
+}
+
+/*slider*/
+#home-banner {
+    background-image: url(../img/home-slide-3-1920x800.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    margin: 25px 0; 
+}
+.banner-content{
+    max-width: 1024px;
+    color: #fff;
+    font-weight: 700;
+    min-height: 400px;
+    margin:0px auto;
+    position: relative;
+}
+.banner-content #novelty{
+    background-color: var(--accent-color);
+    position: absolute;
+    top:50px;
+    left: 100px;
+    padding: 15px 25px;
+
+}
+.banner-content #banner-title{
+    font-size: 4rem;
+    font-weight: 800;
+    position: absolute;
+    top:100px;
+    left: 30px;
+}
+.banner-content #banner-text{
+    color: var(--yellow-color);
+    font-size: 2rem;
+    font-weight: 800;
+    position: absolute;
+    top:180px;
+    left: 100px;
+}
+
+
+#home-menu {
+        display: block;
+        
+    }
+#home-menu #main-menu {
+    background-image: url(../img/index-01-566x401.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    margin: 25px 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items:center;
+    color:#fff;
+    padding: 15px;
+    text-align: center;
+}
+#home-menu #main-menu h2,
+#home-menu #home-action h2,
+#home-menu #home-price h2{
+    font-size: 1.8em;
+    font-style: italic;
+    font-weight: 800;
+    margin: 0;
+}
+#home-menu #main-menu h2 a,
+#home-menu #home-action h2 a,
+#home-menu #home-price h2 a{
+    color:#fff;}
+
+#home-menu #home-action{
+    background-image: url(../img/index-02-566x401.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    margin: 25px 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items:center;
+    color:#fff;
+    padding: 15px 5px;
+    text-align: center;
+}
+#home-menu #home-price{
+    background-image: url(../img/index-03-566x401.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    margin: 25px 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items:center;
+    color:#fff;
+    padding: 15px 5px;
+    text-align: center;
+}
+@media (min-width: 700px) {
+
+    #home-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+    #home-menu #main-menu {
+        min-height: 250px;
+    }
 }
